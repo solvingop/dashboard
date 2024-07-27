@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="module" src="i.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Student Dashboard</h1>
+        </header>
+        <main>
+            <section class="profile-section">
+                <h2>Profile</h2>
+                <div class="profile-info">
+                    <p>Name: <span id="profile-name">John Doe</span></p>
+                    <p>Email: <span id="profile-email">johndoe@example.com</span></p>
+                </div>
+            </section>
+            <section class="progress-section">
+                <h2>Lesson Progress</h2>
+                <div class="progress-details">
+                    <p>Lessons Completed: <span id="lessons-completed">15</span> / 20</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="subjects">
+                <h2>Subjects</h2>
+                <div class="subject-list">
+                    <div class="subject" data-subject="english">
+                        <div class="icon blue"><i class="fas fa-book"></i></div>
+                        <span>English</span>
+                    </div>
+                    <div class="subject" data-subject="maths">
+                        <div class="icon orange"><i class="fas fa-calculator"></i></div>
+                        <span>Maths</span>
+                    </div>
+                    <div class="subject" data-subject="sst">
+                        <div class="icon green"><i class="fas fa-globe"></i></div>
+                        <span>SST</span>
+                    </div>
+                    <div class="subject" data-subject="science">
+                        <div class="icon purple"><i class="fas fa-vial"></i></div>
+                        <span>Science</span>
+                    </div>
+                    <div class="subject" data-subject="hindi">
+                        <div class="icon pink"><i class="fas fa-om"></i></div>
+                        <span>Hindi</span>
+                    </div>
+                    <div class="subject" data-subject="sanskrit">
+                        <div class="icon brown"><i class="fas fa-om"></i></div>
+                        <span>Sanskrit</span>
+                    </div>
+                    <div class="subject" data-subject="computer">
+                        <div class="icon grey"><i class="fas fa-laptop"></i></div>
+                        <span>Computer</span>
+                    </div>
+                </div>
+            </section>
+            <section class="quizzes">
+                <h2>Quizzes</h2>
+                <p>Quizzes Taken: <span id="quizzes-taken">5</span> / 10</p>
+                <p>Highest Score: <span id="highest-score">95</span></p>
+                <button>Take Quiz</button>
+                <div class="sample-quiz">
+                    <h3>Sample Quiz</h3>
+                    <div class="quiz-question">
+                        <p>1. What is the capital of France?</p>
+                        <label>
+                            <input type="radio" name="q1" value="Paris"> Paris
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="London"> London
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="Berlin"> Berlin
+                        </label>
+                    </div>
+                    <div class="quiz-question">
+                        <p>2. What is 2 + 2?</p>
+                        <label>
+                            <input type="radio" name="q2" value="3"> 3
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="4"> 4
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="5"> 5
+                        </label>
+                    </div>
+                    <button class="submit-quiz">Submit Quiz</button>
+                </div>
+            </section>
+            <section class="rankings">
+                <h2>Rankings</h2>
+                <p>Total Students: <span id="total-students">100</span></p>
+                <p>Your Rank: <span id="your-rank">10</span></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JohnDoe</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>JaneSmith</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>Student123</td>
+                            <td>76</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
